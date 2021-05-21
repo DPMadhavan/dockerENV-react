@@ -5,7 +5,6 @@ COPY package.json .
 COPY yarn.lock .
 RUN yarn
 COPY . .
-RUN yarn upgrade caniuse-lite browserslist
 RUN yarn build
 
 # => Run container
